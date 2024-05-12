@@ -4,4 +4,10 @@ describe("findSpaceship", function() {
         const coordinates = findSpaceship(map);
         expect(coordinates).toEqual([7, 2]); // Expected coordinates [row, column]
     });
+
+    it("should return 'Spaceship lost forever.' if spaceship is not found", function() {
+        const map = "..........\n..........\n..........\n..........\n..........\n..........";
+        const result = findSpaceship(map);
+        expect(result).toEqual("Spaceship lost forever.");
+    });
 });
