@@ -16,4 +16,11 @@ describe("findSpaceship", function() {
         const coordinates = findSpaceship(map);
         expect(coordinates).toEqual([3, 1]);
     });
+
+    it("should return 'Spaceship lost forever.' for an empty map", function() {
+        const map = "";
+        const result = findSpaceship(map);
+        expect(result).toEqual("Spaceship lost forever.");
+    });
+    
 });
