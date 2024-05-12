@@ -10,4 +10,10 @@ describe("findSpaceship", function() {
         const result = findSpaceship(map);
         expect(result).toEqual("Spaceship lost forever.");
     });
+
+    it("should handle a map with multiple rows and columns", function() {
+        const map = "......\n...X..\n......";
+        const coordinates = findSpaceship(map);
+        expect(coordinates).toEqual([3, 1]);
+    });
 });
