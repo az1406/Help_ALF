@@ -22,5 +22,10 @@ describe("findSpaceship", function() {
         const result = findSpaceship(map);
         expect(result).toEqual("Spaceship lost forever.");
     });
-    
+
+    it("should return the correct coordinates if spaceship is found at the top-left corner", function() {
+        const map = "X.........\n..........\n..........\n..........\n..........\n..........";
+        const coordinates = findSpaceship(map);
+        expect(coordinates).toEqual([0, 5]); // Expected coordinates [column, row]
+    });
 });
