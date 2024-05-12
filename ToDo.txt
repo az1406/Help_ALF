@@ -1,0 +1,6 @@
+To do:
+1.Überprüfe, ob die Funktion die richtigen Koordinaten zurückgibt, wenn das Raumschiff gefunden wird.
+2.Überprüfe, ob die Funktion den Text "Spaceship lost forever." zurückgibt, wenn das Raumschiff nicht gefunden wird.
+3.Teste die Behandlung einer Karte mit mehreren Zeilen und Spalten, um sicherzustellen, dass die Funktion die richtigen Koordinaten zurückgibt, wenn das Raumschiff gefunden wird.
+4.Stelle sicher, dass die Funktion den Text "Spaceship lost forever." zurückgibt, wenn die Karte leer ist.
+5.Überprüfe, ob die Funktion den Text "Spaceship lost forever." zurückgibt, wenn die Karte kein 'X' enthält.
